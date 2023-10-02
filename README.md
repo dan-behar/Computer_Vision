@@ -1,5 +1,5 @@
 # Computer_Vision
-Repo for the class of Computer Vision with all the exercises
+Repo for the class of Computer Vision with all the exercises. Each directory has its own README that clarifies more.
 
 * Lab1: in this exercise we painted all the lines in a fingerprint using the Conected Components Algorithm
 * Proyecto1: this project was aimed to create a car plate detector that can recognize a plate and the letters
