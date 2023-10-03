@@ -8,5 +8,5 @@ detector.py: the python file that runs everyting
 * images85.jpg: An image to test the project
 
 ### Instructions to run it:
-1. Run model.ipynb to produce the model
-2. In the CMD run: python detector.py --p <COMPLETE_DIRECTION_TO_FILE>.<IMG_TYPE> or python detector.py
+1. Run model.ipynb to produce the model. The kaggle dataset is needed for this step
+2. In the CMD run: python detector.py --p <COMPLETE_DIRECTION_TO_FILE/IMG_NAME.IMG_TYPE> or python detector.py
