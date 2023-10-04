@@ -9,15 +9,15 @@ from joblib import dump
 
 print("Extraxting letters...")
 # Extracting all the photos to train the model
-dir = 'C:/Users/danie/Desktop/Repositorios/CV extras/'
-searcher = os.listdir(f'{dir}model_images')
+dir = '<YOUR_DIRECTION_TO_THE_FOLDER_WITH_ALL_THE_CHARACTERS>'
+searcher = os.listdir(dir)
 X = []
 y = []
 
 for i in range(len(searcher)):
-    photos = os.listdir(f'{dir}model_images/{searcher[i]}')
+    photos = os.listdir(f'{dir}/{searcher[i]}')
     for j in range(len(photos)):
-        letter = cv.imread(f'{dir}model_images/{searcher[i]}/{photos[j]}', cv.IMREAD_GRAYSCALE)
+        letter = cv.imread(f'{dir}/{searcher[i]}/{photos[j]}', cv.IMREAD_GRAYSCALE)
         letter_reduced = letter.flatten()
         X.append(letter_reduced)
         y.append(searcher[i])
